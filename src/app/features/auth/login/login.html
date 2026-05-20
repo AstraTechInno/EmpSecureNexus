@@ -1,0 +1,112 @@
+<div class="auth-container">
+
+    <div class="auth-card" [class.active]="isRegisterMode">
+  
+      <!-- LOGIN -->
+      <div class="form-section login-section">
+  
+        <div class="form-box">
+  
+          <h1>EmpSecure Nexus</h1>
+  
+          <p>Enterprise Employee Security Portal</p>
+  
+          <div class="input-group">
+            <input type="email" placeholder="Official Email">
+          </div>
+  
+          <div class="input-group">
+            <input type="password" placeholder="Password">
+          </div>
+  
+          <button class="primary-btn">
+            Login
+          </button>
+  
+        </div>
+  
+      </div>
+  
+      <!-- REGISTER -->
+      <div class="form-section register-section">
+  
+        <div class="form-box">
+  
+          <h1>Create Account</h1>
+  
+          <p>Secure Workforce Registration</p>
+  
+          <div class="input-row">
+  
+            <div class="input-group">
+              <input type="text" placeholder="First Name">
+            </div>
+  
+            <div class="input-group">
+              <input type="text" placeholder="Last Name">
+            </div>
+  
+          </div>
+  
+          <div class="input-group">
+            <input type="email" placeholder="Official Email">
+          </div>
+  
+          <div class="input-group">
+            <input type="text" placeholder="Employee ID">
+          </div>
+  
+          <div class="input-group">
+            <input type="password" placeholder="Password">
+          </div>
+  
+          <button class="primary-btn">
+            Register
+          </button>
+  
+        </div>
+  
+      </div>
+  
+      <!-- OVERLAY -->
+      <div class="overlay-container">
+  
+        <div class="overlay">
+  
+          <!-- LEFT -->
+          <div class="overlay-panel overlay-left">
+  
+            <h2>Welcome Back!</h2>
+  
+            <p>
+              Login to access secure employee information.
+            </p>
+  
+            <button class="ghost-btn" (click)="togglePanel()">
+              Login
+            </button>
+  
+          </div>
+  
+          <!-- RIGHT -->
+          <div class="overlay-panel overlay-right">
+  
+            <h2>New Employee?</h2>
+  
+            <p>
+              Create a secure enterprise account.
+            </p>
+  
+            <button class="ghost-btn" (click)="togglePanel()">
+              Register
+            </button>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
